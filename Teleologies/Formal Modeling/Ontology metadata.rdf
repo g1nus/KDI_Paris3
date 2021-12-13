@@ -1,0 +1,54 @@
+@prefix :      <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx:  <http://spdx.org/rdf/terms#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix gsp:   <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hydra: <http://www.w3.org/ns/hydra/core#> .
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix locn:  <http://www.w3.org/ns/locn#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix epos:  <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix cnt:   <http://www.w3.org/2011/content#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix http:  <http://www.w3.org/2006/http#> .
+@prefix dash:  <http://datashapes.org/dash#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/5752350f-27d2-4783-b8f9-3faf78c868e3>
+        rdf:type            schema:ContactPoint ;
+        schema:contactType  "Student" ;
+        schema:email        "giuliano.andronic@studenti.unitn.it" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/0b4cd1b3-9c85-42f9-bc5e-d88940030442>
+        rdf:type           dcat:Dataset ;
+        dct:description    "Entity Type Graph" ;
+        dct:identifier     "Ontology.owl" ;
+        dct:title          "ETG formal model" ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/a4fee5e6-5805-4c93-8634-2fc780635fbf> , <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/5752350f-27d2-4783-b8f9-3faf78c868e3> ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/28771eeb-8954-43e5-a109-a79925ff65f2> .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/a4fee5e6-5805-4c93-8634-2fc780635fbf>
+        rdf:type            schema:ContactPoint ;
+        schema:contactType  "Student" ;
+        schema:email        "diane.willaime@studenti.unitn.it" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/28771eeb-8954-43e5-a109-a79925ff65f2>
+        rdf:type         skos:Concept ;
+        skos:definition  "formal ETG of Paris touristic activities and attractions" ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/fc547c7d-b284-4109-b178-3e5e7f788adc> ;
+        skos:prefLabel   "ETG of Paris Tourism" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/fc547c7d-b284-4109-b178-3e5e7f788adc>
+        rdf:type         skos:ConceptScheme ;
+        dct:description  "Paris activities and places" ;
+        dct:title        "Paris activities and places" .
