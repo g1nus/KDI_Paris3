@@ -1,0 +1,43 @@
+@prefix :      <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx:  <http://spdx.org/rdf/terms#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix gsp:   <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hydra: <http://www.w3.org/ns/hydra/core#> .
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix locn:  <http://www.w3.org/ns/locn#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix epos:  <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix cnt:   <http://www.w3.org/2011/content#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix http:  <http://www.w3.org/2006/http#> .
+@prefix dash:  <http://datashapes.org/dash#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/a008a054-d936-4b9d-88fc-1fb396488a8c>
+        rdf:type            schema:ContactPoint ;
+        schema:contactType  "Student" ;
+        schema:email        "giuliano.andronic@studenti.unitn.it" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/6f711dfb-f4b9-4495-9e4f-7fc5ad463eff>
+        rdf:type            schema:ContactPoint ;
+        schema:contactType  "Student" ;
+        schema:email        "diane.willaime@studenti.unitn.it" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/a79ce531-63e6-4169-8557-cc6753002d76>
+        rdf:type           dcat:Dataset ;
+        dct:description    "ER diagram for informal modeling" ;
+        dct:identifier     "ER-01.png" ;
+        dct:modified       "2021-11-29T18:20:00Z"^^xsd:dateTime ;
+        dct:title          "ER diagram" ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/6f711dfb-f4b9-4495-9e4f-7fc5ad463eff> , <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/a008a054-d936-4b9d-88fc-1fb396488a8c> .
