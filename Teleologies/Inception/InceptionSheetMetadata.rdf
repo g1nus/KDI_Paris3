@@ -1,0 +1,54 @@
+@prefix :      <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx:  <http://spdx.org/rdf/terms#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix gsp:   <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hydra: <http://www.w3.org/ns/hydra/core#> .
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix locn:  <http://www.w3.org/ns/locn#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix epos:  <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix cnt:   <http://www.w3.org/2011/content#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix http:  <http://www.w3.org/2006/http#> .
+@prefix dash:  <http://datashapes.org/dash#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/9bfb02d6-1550-4c0e-9132-66e18041238c>
+        rdf:type           dcat:Dataset ;
+        dct:description    "Inception phase modeling sheet with Competency Questions" ;
+        dct:identifier     "InceptionSheet.xlsx" ;
+        dct:title          "Inception Sheet" ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/94887cc7-bc67-4680-8c69-62191b686cf0> , <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/78342b6f-c907-42ba-9d39-ace4e44cb5bb> ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/cab43ddd-ad47-4d5c-9c12-1259430e8b29> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/cab43ddd-ad47-4d5c-9c12-1259430e8b29>
+        rdf:type         skos:Concept ;
+        skos:definition  "First 3 steps of the CQ analysis" ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/2add7d98-ce16-4640-be03-d92f594abc71> ;
+        skos:prefLabel   "CQ" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/2add7d98-ce16-4640-be03-d92f594abc71>
+        rdf:type         skos:ConceptScheme ;
+        dct:description  "Competency Questions analysis\t" ;
+        dct:title        "Competency Questions analysis\t" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/94887cc7-bc67-4680-8c69-62191b686cf0>
+        rdf:type            schema:ContactPoint ;
+        schema:contactType  "Student" ;
+        schema:email        "diane.willaime@studenti.unitn.it" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/78342b6f-c907-42ba-9d39-ace4e44cb5bb>
+        rdf:type            schema:ContactPoint ;
+        schema:contactType  "Student" ;
+        schema:email        "giuliano.andronic@studenti.unitn.it" .
